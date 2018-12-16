@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HYDROPCTECH</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/design.css">
+<style>
+#loader{top:0;left:0;background:#ffffff;color:#666;font-size:1em;position:fixed;min-height:100%;min-width:100%;margin:0;z-index:99999;}
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  content: '';
+}
+.loader:before {
+  width: 5.2em;
+  height: 10.2em;
+  background:#ffffff;
+  border-radius: 10.2em 0 0 10.2em;
+  top: -0.1em;
+  left: -0.1em;
+  -webkit-transform-origin: 5.2em 5.1em;
+  transform-origin: 5.2em 5.1em;
+  -webkit-animation: load2 2s infinite ease 1.5s;
+  animation: load2 2s infinite ease 1.5s;
+}
+.loader {
+  font-size: 11px;
+  text-indent: -99999em;
+  margin: 55px auto;
+  position: relative;
+  width: 10em;
+  height: 10em;
+  box-shadow: inset 0 0 0 1em rgba(162,10,11,0.62);
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index:99;
+}
+.loader:after {
+  width: 5.2em;
+  height: 10.2em;
+  background: #ffffff;
+  border-radius: 0 10.2em 10.2em 0;
+  top: -0.1em;
+  left: 5.1em;
+  -webkit-transform-origin: 0px 5.1em;
+  transform-origin: 0px 5.1em;
+  -webkit-animation: load2 2s infinite ease;
+  animation: load2 2s infinite ease;
+}
+#loadee h2{
+	font-size:21px;
+	color:#666;
+	font-weight:800;
+}
+@-webkit-keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes load2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#pageContent{
+	margin:60px auto;
+	margin-bottom:0;
+}
+</style>
+</head>
+<body>
+<header class="autohide_header">
+	<div class="logo"></div>
+	<nav class="upper_nav">
+		<a href="#main_nav" class="nav-trigger">
+			<span>
+				<em aria-hidden="true"></em>
+				Menu
+			</span>
+		</a>
+	<ul id="nav_" class="menu">
+		<li id="li_"><a href="#home">Home</a></li>
+		<li id="li_"><a href="#store">store</a></li>
+		<li id="li_"><a href="#about">about</a></li>
+		<li id="li_"><a href="#contact">contact</a></li>
+		<br/>
+		<li id="li_" style="background:transparent;box-shadow:none;border:none;padding:0;margin:0;overflow:hidden;margin-left:-4px;margin-top:.6%;border-radius:6px;height:40%;width:100%;"><input type="text" placeholder="Quick Search..." style="color:#555;background:transparent;width:100%;height:100%;text-align:center;font-weight:840;"/></li>
+	</ul>
+	
+	</nav> <!-- .upper_nav -->
+	<div class="blacked">
+		<div class="slogan_">Empowering Innovation Technology</div>
+	</div>
+	<nav class="lower_nav">
+			<div class="slogan_">Empowering Innovation Technology</div>
+		<ul class="subnav">
+		<!-- ngFor To Loop Trough the links Dynamically -->
+			<li><a href="#all">All</a></li>
+			<li><a href="#laptop">Laptop</a></li>
+			<li><a href="#desktop">Desktop</a></li>
+			<li><a href="#mobile">Mobile</a></li>
+			<li><a href="#accessories">Accessories</a></li>
+			<li><a href="#support">Support</a></li>
+		</ul>
+	</nav> <!-- .lower_nav -->
+	
+</header> <!-- .autohide_header -->
+<!-- Some Show Off Animations -->
+<canvas></canvas>
+<center>
+<section id='loader'>
+<div style='margin:12% auto;'>
+<h2 style='color:#ccc;'>Just a Sec...</h2>
+<div class="loader">Loading...</div>
+<p>&copy; hydropctech.co.za 2019<p>
+</div>
+</section>
+
+<section id="pageContent">
+  <p>If You're Reading this: Shits Hitted The fan</p>
+</section>
+</center>
+<script src='js/jquery.js'></script>
+<script src="js/header.js"></script>
+</body>
+</html>
